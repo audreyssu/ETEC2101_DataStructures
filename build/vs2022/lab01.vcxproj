@@ -11,11 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\example\Header.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\src\example\person.cpp" />
     <ClCompile Include="..\..\src\lab01_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\example\person.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
