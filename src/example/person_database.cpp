@@ -6,6 +6,14 @@
 #include <iomanip>			// Necessary for std::setprecision
 #include <iostream>
 
+#ifdef USING_DYNAMIC_ARRAY
+	#include <array_list.h>
+#endif // USING_DYNAMIC_ARRAY
+
+
+#ifndef USING_DYNAMIC_ARRAY
+
+
 
 example::PersonDatabase::PersonDatabase(std::string fname) : mArray(nullptr), mFilename(fname),
 															mArraySize(0)
@@ -76,6 +84,59 @@ example::PersonDatabase::~PersonDatabase()
 }
 
 
+#endif // !USING_DYNAMIC_ARRAY
+
+
+
+#ifdef USING_DYNAMIC_ARRAY
+ssuds::ArrayList<Person> person_list;
+mArraySize(0)
+{
+	std::ifstream fp(mFilename);
+	if (fp.is_open())
+	{
+		// We were able to open the file -- read in the data.  I'm relying on add_person
+		// to do the hard work here
+		unsigned int temp_id;
+		float temp_rate;
+		int temp_hours;
+		std::string temp_fname;
+		std::string temp_lname;
+
+		//std::getline(fp, temp_fname);
+
+		while (true)
+		{
+			// Get the data using stream input operator since they're space-delimited
+			fp >> temp_id >> temp_rate >> temp_hours >> temp_fname >> temp_lname;
+
+			if (fp.fail() || fp.eof())
+			{
+				// If we get here it means we weren't able to process the data above.
+				// Since I control the file format, the assumption is this means we're out
+				// of data
+				break;
+			}
+			else
+			{
+				// We got valid data, so now build a Person and add it
+				Person temp_person(temp_fname, temp_lname, temp_id, temp_rate);
+				temp_person.set_hours_worked(temp_hours);
+
+				// Note that when I call this, we're making a COPY of temp_person on the stack.  For
+				// small objects like this, this is probably OK, but for larger objects it's much
+				// better to use pointers (or references...which we'll look at in the next lab)
+				person_list.append(person);
+				//std::cout << "Added person: " << temp_fname << " " << temp_lname << " " << temp_id << " " << temp_hours << " " << temp_rate << "\n";
+			}
+		}
+
+		// Close the file
+		fp.close();
+	}
+}
+
+#endif // USING_DYNAMIC_ARRAY
 
 
 void example::PersonDatabase::add_person(Person p)
