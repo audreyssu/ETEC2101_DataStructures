@@ -1,0 +1,7 @@
+temp/*
+.vs
+*.exe
+*.pdb
+*.bak
+*.filters
+*.user
