@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E737C8FE-E77F-3462-8629-D25DC686AACA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>sfml-audio</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-audio.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-audio-d-3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-audio.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-audio-3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-audio.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-audio-3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-audio.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-audio-3</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/miniaudio" /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/minimp3" /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4068;4505;4800;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4289</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR="Debug";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR=\"Debug\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\Debug\sfml-system-d.lib;..\..\..\lib\Debug\vorbisd.lib;..\..\..\lib\Debug\vorbisfiled.lib;..\..\..\lib\Debug\vorbisencd.lib;..\..\..\lib\Debug\FLACd.lib;..\..\..\lib\Debug\vorbisd.lib;..\..\..\lib\Debug\oggd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/Debug/sfml-audio-d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/Debug/sfml-audio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/miniaudio" /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/minimp3" /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4068;4505;4800;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4289</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR="Release";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR=\"Release\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\Release\sfml-system.lib;..\..\..\lib\Release\vorbis.lib;..\..\..\lib\Release\vorbisfile.lib;..\..\..\lib\Release\vorbisenc.lib;..\..\..\lib\Release\FLAC.lib;..\..\..\lib\Release\vorbis.lib;..\..\..\lib\Release\ogg.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/Release/sfml-audio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/Release/sfml-audio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/miniaudio" /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/minimp3" /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4068;4505;4800;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4289</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR="MinSizeRel";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR=\"MinSizeRel\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\MinSizeRel\sfml-system.lib;..\..\..\lib\MinSizeRel\vorbis.lib;..\..\..\lib\MinSizeRel\vorbisfile.lib;..\..\..\lib\MinSizeRel\vorbisenc.lib;..\..\..\lib\MinSizeRel\FLAC.lib;..\..\..\lib\MinSizeRel\vorbis.lib;..\..\..\lib\MinSizeRel\ogg.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/MinSizeRel/sfml-audio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/MinSizeRel/sfml-audio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/miniaudio" /external:I "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/extlibs/headers/minimp3" /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4068;4505;4800;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatSpecificWarningsAsErrors>4289</TreatSpecificWarningsAsErrors>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR="RelWithDebInfo";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;MA_NO_MP3;MA_NO_FLAC;MA_NO_ENCODING;MA_NO_RESOURCE_MANAGER;MA_NO_GENERATION;MA_USE_STDINT;SFML_IS_BIG_ENDIAN=0;CMAKE_INTDIR=\"RelWithDebInfo\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-src\include;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\miniaudio;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\extlibs\headers\minimp3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\lib\RelWithDebInfo\sfml-system.lib;..\..\..\lib\RelWithDebInfo\vorbis.lib;..\..\..\lib\RelWithDebInfo\vorbisfile.lib;..\..\..\lib\RelWithDebInfo\vorbisenc.lib;..\..\..\lib\RelWithDebInfo\FLAC.lib;..\..\..\lib\RelWithDebInfo\vorbis.lib;..\..\..\lib\RelWithDebInfo\ogg.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/RelWithDebInfo/sfml-audio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/RelWithDebInfo/sfml-audio.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/src/SFML/Audio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0" "-BC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject" --check-stamp-file "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/src/SFML/Audio/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/src/SFML/Audio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0" "-BC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject" --check-stamp-file "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/src/SFML/Audio/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/src/SFML/Audio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0" "-BC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject" --check-stamp-file "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/src/SFML/Audio/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/src/SFML/Audio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0" "-BC:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject" --check-stamp-file "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/src/SFML/Audio/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FetchContent\CMakeLists.cmake.in;C:\Program Files\CMake\share\cmake-3.31\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\AudioResource.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\AudioResource.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\AudioDevice.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\AudioDevice.hpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\Export.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\Listener.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\Listener.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\Miniaudio.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\MiniaudioUtils.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\MiniaudioUtils.cpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\Music.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\Music.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\PlaybackDevice.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\PlaybackDevice.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\Sound.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\Sound.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundBuffer.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundBuffer.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundBufferRecorder.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundChannel.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\InputSoundFile.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\InputSoundFile.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\OutputSoundFile.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\OutputSoundFile.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundRecorder.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundRecorder.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundSource.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundSource.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundStream.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundStream.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileFactory.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundFileFactory.hpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundFileFactory.inl" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundFileReader.hpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderFlac.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderFlac.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderMp3.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderMp3.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderOgg.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderOgg.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderWav.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileReaderWav.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\include\SFML\Audio\SoundFileWriter.hpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileWriterFlac.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileWriterFlac.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileWriterOgg.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileWriterOgg.cpp" />
+    <ClInclude Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileWriterWav.hpp" />
+    <ClCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-sources\SFML-3.0.0\src\SFML\Audio\SoundFileWriterWav.cpp" />
+    <ResourceCompile Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\src\SFML\Audio\sfml-audio.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\ZERO_CHECK.vcxproj">
+      <Project>{027ABA70-359C-3429-A339-DCA30B9A28D8}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\flac-build\src\libFLAC\FLAC.vcxproj">
+      <Project>{94FF40EB-6AE1-3213-B18B-935ECA8E108C}</Project>
+      <Name>FLAC</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\ogg-build\ogg.vcxproj">
+      <Project>{E7752227-E7E1-3404-880F-8D66FF92BEB5}</Project>
+      <Name>ogg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\src\SFML\System\sfml-system.vcxproj">
+      <Project>{B33D2C94-1325-3785-A887-E5028218B3EA}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-build\lib\vorbis.vcxproj">
+      <Project>{28CDD15C-EAB6-3642-8098-AF38560F0DC0}</Project>
+      <Name>vorbis</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-build\lib\vorbisenc.vcxproj">
+      <Project>{6CCE8CE6-44EB-3F0B-A8B0-B851F8C72CEF}</Project>
+      <Name>vorbisenc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\_deps\vorbis-build\lib\vorbisfile.vcxproj">
+      <Project>{554304E3-8D8E-341A-925F-A0189F5FF70C}</Project>
+      <Name>vorbisfile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

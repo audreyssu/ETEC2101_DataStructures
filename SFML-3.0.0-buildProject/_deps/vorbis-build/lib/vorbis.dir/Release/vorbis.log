@@ -1,0 +1,26 @@
+﻿  Building Custom Rule C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/vorbis-src/lib/CMakeLists.txt
+  mdct.c
+  smallft.c
+  block.c
+  envelope.c
+  window.c
+  lsp.c
+  lpc.c
+  analysis.c
+  synthesis.c
+  psy.c
+  info.c
+  floor1.c
+  floor0.c
+  res0.c
+  mapping0.c
+  registry.c
+  codebook.c
+  sharedbook.c
+  lookup.c
+  bitrate.c
+  Generating Code...
+  Compiling...
+  vorbisenc.c
+  Generating Code...
+  vorbis.vcxproj -> C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\lib\Release\vorbis.lib

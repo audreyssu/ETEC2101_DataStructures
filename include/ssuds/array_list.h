@@ -100,11 +100,11 @@ namespace ssuds {
 			T item_copy = self_array[index];
 			T* new_array = new T[self_capacity];
 
-			for (int i = 0; i < index; i++) {
+			for (auto i = self_array.begin(); i != self_array.end(); i++) {
 				new_array[i] = self_array[i];
 			}
 
-			for (int i = index + 1; i < self_size; i++) {
+			for (auto i = self_array[index+1]; i != self_array.end(); i++) {
 				new_array[i-1] = self_array[i];
 			}
 			self_size--;
@@ -112,6 +112,16 @@ namespace ssuds {
 			self_array = new_array;
 			resize();
 			return item_copy;
+		}
+
+		int find(T value) {
+			int retval = 0;
+			for (auto i = self_array.begin(); i != self_array.end(); i++) {
+				if (*i == value) {
+					retval++;
+				}
+			}
+			return retval;
 		}
 
 		int remove_all(const T& removed_item) {
@@ -128,6 +138,9 @@ namespace ssuds {
 			}
 			return count;
 		}
+
+
+
 
 		/// <summary>
 		/// Changes the max capacity of the array. Either shrinks to half of current size or doubles current size 
@@ -221,6 +234,11 @@ namespace ssuds {
 			return self_capacity;
 		}
 
+		T& operator[](const int index) {
+			return self_array[index];
+		}
+
+
 
 		/// <summary>
 		/// Returns array as string
@@ -240,34 +258,195 @@ namespace ssuds {
 			return return_string;
 		}
 
-		// Nested class for Lab03
-		/*class ArrayListIterator {
+		std::ostream& operator<<(std::ostream& os) {
+			std::string return_string = "[";
+
+			for (int i = 0; i < self_size; i++) {
+				return_string.append(self_array[i]);
+				if (i < self_size - 1) {
+					return_string.append(", ");
+				}
+			}
+			return_string.append("]");
+			os << return_string;
+			return os;
+		}
+
+		/// <summary>
+		/// Iteratot for ArrayList class
+		/// </summary>
+		class ArrayListIterator {
 		private:
-
-		
+			T* ptr;
 		public:
+			bool reversed;
+			ArrayListIterator(T* p) : ptr(p) {
+				reversed = false;
+			}
+
+
+
+			/// <summary>
+			/// Return balue iterator points to
+			/// </summary>
 			T& operator*() {
-
+				return *ptr;
 			}
 
-			T& operator++() {
-				position++;
+
+			/// <summary>
+			/// Add to iterator
+			/// </summary>
+			T& operator+(const int other) {
+				if (!reversed) {
+					ptr += other;
+					return ptr;
+				}
+				else {
+					ptr -= other;
+					return ptr;
+				}
 			}
 
-			bool operator!=(const ArrayListIterator& other) {
-
+			/// <summary>
+			/// Increment
+			/// </summary>
+			ArrayListIterator& operator++() {
+				if (!reversed) {
+					++ptr;
+					return *this;
+				}
+				else {
+					--ptr;
+					return *this;
+				}
 			}
 
-			ArrayListIterator begin() {
-				ArrayListIterator temp(this, 0);
-				return temp;
+			/// <summary>
+			/// Increment on right hand side
+			/// </summary>
+			ArrayListIterator& operator++(int) {
+				if (!reversed) {
+					++ptr;
+					return *this;
+				}
+				else {
+					--ptr;
+					return *this;
+				}
 			}
 
-			ArrayListIterator end() {
-				ArrayListIterator temp(this, 0);
-				return temp;
+			/// <summary>
+			/// Decrement
+			/// </summary>
+			ArrayListIterator& operator--() {
+				if (!reversed) {
+					--ptr;
+					return *this;
+				}
+				else {
+					++ptr;
+					return *this;
+				}
 			}
-		};*/
-	
+
+			/// <summary>
+			/// Decrement on right hand side
+			/// </summary>
+			ArrayListIterator& operator--(int) {
+				if (!reversed) {
+					--ptr;
+					return *this;
+				}
+				else {
+					++ptr;
+					return *this;
+				}
+			}
+
+			/*ArrayListIterator& operator=(const ArrayListIterator& other) {
+				if (this != other) {
+					delete[] ptr;
+				}
+
+				ptr = new ArrayListIterator;
+				*ptr = *other;
+
+				return *this;
+			}*/
+			
+			/// <summary>
+			/// Compares if two are equal
+			/// </summary>
+			/// <param name="other">Value comparing to</param>
+			/// <returns>Bool value</returns>
+			bool operator==(const T& other) {
+				return *ptr == other;
+			}
+
+			/// <summary>
+			/// Compares if two are not equal
+			/// </summary>
+			/// <param name="other">Value comparing to</param>
+			/// <returns>Bool value</returns>
+			bool operator!=(const T& other) {
+				return *ptr != other;
+			}
+		};
+		
+		/// <summary>
+		/// Returns reference to first in array
+		/// </summary>
+		ArrayListIterator begin() {
+			return &self_array[0];
+		}
+
+		/// <summary>
+		/// Returns reference to last in array
+		/// </summary>
+		ArrayListIterator end() {
+			return &self_array[get_size()-1];
+		}
+
+		/// <summary>
+		/// Returns reference to first in array, iterates backwards
+		/// </summary>
+		ArrayListIterator rbegin() {
+			ArrayListIterator it = &self_array[get_size()-1];
+			it.reversed = true;
+			return it;
+		}
+
+		/// <summary>
+		/// Returns reference to last in array, iterates backwards
+		/// </summary>
+		ArrayListIterator rend() {
+			ArrayListIterator it = & self_array[0];
+			it.reversed = true;
+			return it;
+		}
+
+		/// <summary>
+		/// Creates deep copy of other ArrayList object
+		/// </summary>
+		 ArrayList operator=(const ArrayList other) {
+			 if (this != other) {
+				 delete[] self_array;
+
+				}
+
+			 self_size = other.get_size();
+			 self_capacity = other.get_capacity();
+
+			 self_array = new T[self_capacity];
+
+			 for (int i = 0; i < other.get_size(); i++) {
+				 self_array[i] = other[i];
+			 }
+			 return *this;
+			}
+
+
+
 	};
 }

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['find_0',['find',['../classssuds_1_1_array_list.html#a30055d18237fbffdbe01c9ac9d239dd9',1,'ssuds::ArrayList']]]
+  ['begin_0',['begin',['../classssuds_1_1_array_list.html#a29d38b6e2574880f07422497f468ddd8',1,'ssuds::ArrayList']]]
 ];

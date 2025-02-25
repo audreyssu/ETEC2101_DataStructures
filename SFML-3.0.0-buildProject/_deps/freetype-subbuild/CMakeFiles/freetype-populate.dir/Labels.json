@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/freetype-populate"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/cfe8c1444e88baa7aca7ea3995fd5ed1/freetype-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/87aaf7f589f9fd9d652f47768a2be3b6/freetype-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/freetype-subbuild/CMakeFiles/adb87fd7b7158ce82e75d071d5dbed91/freetype-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"freetype-populate"
+		],
+		"name" : "freetype-populate"
+	}
+}

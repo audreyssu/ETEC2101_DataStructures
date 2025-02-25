@@ -9,6 +9,11 @@ A multipurpose container class that dynamically calculates the necessary size in
 
 {\ttfamily \#include $<$array\+\_\+list.\+h$>$}
 
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Iteratot for \doxylink{classssuds_1_1_array_list}{Array\+List} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -27,6 +32,9 @@ void \mbox{\hyperlink{classssuds_1_1_array_list_a93746bcc915de999475f3ca6de1e7bb
 \begin{DoxyCompactList}\small\item\em Inserts an item at a given index and makes room for it. \end{DoxyCompactList}\item 
 T \mbox{\hyperlink{classssuds_1_1_array_list_a4b254608d7f7936f52c9e5430d7cc20f}{remove}} (int index)
 \begin{DoxyCompactList}\small\item\em Deletes an item at a given index and shrinks the list accordingly. \end{DoxyCompactList}\item 
+\Hypertarget{classssuds_1_1_array_list_aa532bab4b720e80da558784ac072f069}\label{classssuds_1_1_array_list_aa532bab4b720e80da558784ac072f069} 
+int {\bfseries find} (T value)
+\item 
 \Hypertarget{classssuds_1_1_array_list_a60136fbe1c474e432e337299bfe68c3f}\label{classssuds_1_1_array_list_a60136fbe1c474e432e337299bfe68c3f} 
 int {\bfseries remove\+\_\+all} (const T \&removed\+\_\+item)
 \item 
@@ -46,8 +54,29 @@ int {\bfseries get\+\_\+size} () const
 \Hypertarget{classssuds_1_1_array_list_af4357111f24573c2ea12aa5a7810c820}\label{classssuds_1_1_array_list_af4357111f24573c2ea12aa5a7810c820} 
 int {\bfseries get\+\_\+capacity} () const
 \begin{DoxyCompactList}\small\item\em Getter Method for current max number of items in array. \end{DoxyCompactList}\item 
+\Hypertarget{classssuds_1_1_array_list_ac0f53517577deb15d1e92b2f9c51e895}\label{classssuds_1_1_array_list_ac0f53517577deb15d1e92b2f9c51e895} 
+T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const int index)
+\item 
 std\+::string \mbox{\hyperlink{classssuds_1_1_array_list_aa2d9d150c1752fefad5b4e46f6a2a8ee}{output}} ()
-\begin{DoxyCompactList}\small\item\em Returns array as string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns array as string. \end{DoxyCompactList}\item 
+\Hypertarget{classssuds_1_1_array_list_a1333b74865d8748444698c2c9948b74e}\label{classssuds_1_1_array_list_a1333b74865d8748444698c2c9948b74e} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os)
+\item 
+\Hypertarget{classssuds_1_1_array_list_a29d38b6e2574880f07422497f468ddd8}\label{classssuds_1_1_array_list_a29d38b6e2574880f07422497f468ddd8} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} {\bfseries begin} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to first in array. \end{DoxyCompactList}\item 
+\Hypertarget{classssuds_1_1_array_list_a807800c2ae6c98f36604c1e5a03ea8ca}\label{classssuds_1_1_array_list_a807800c2ae6c98f36604c1e5a03ea8ca} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} {\bfseries end} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to last in array. \end{DoxyCompactList}\item 
+\Hypertarget{classssuds_1_1_array_list_a0ab47d9ae06d64045fd398ed249c7a4e}\label{classssuds_1_1_array_list_a0ab47d9ae06d64045fd398ed249c7a4e} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} {\bfseries rbegin} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to first in array, iterates backwards. \end{DoxyCompactList}\item 
+\Hypertarget{classssuds_1_1_array_list_a922b31f659180cc9410c421276ac554a}\label{classssuds_1_1_array_list_a922b31f659180cc9410c421276ac554a} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} {\bfseries rend} ()
+\begin{DoxyCompactList}\small\item\em Returns reference to last in array, iterates backwards. \end{DoxyCompactList}\item 
+\Hypertarget{classssuds_1_1_array_list_a9f8d2bb9b4a6c6af278e909279077c1f}\label{classssuds_1_1_array_list_a9f8d2bb9b4a6c6af278e909279077c1f} 
+\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} {\bfseries operator=} (const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} other)
+\begin{DoxyCompactList}\small\item\em Creates deep copy of other \doxylink{classssuds_1_1_array_list}{Array\+List} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

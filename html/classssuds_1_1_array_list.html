@@ -89,6 +89,7 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classssuds_1_1_array_list-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ssuds::ArrayList&lt; T &gt; Class Template Reference</div></div>
@@ -100,6 +101,12 @@ $(function(){ initResizable(false); });
 
 <p><code>#include &lt;<a class="el" href="array__list_8h_source.html">array_list.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classssuds_1_1_array_list_1_1_array_list_iterator.html">ArrayListIterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteratot for <a class="el" href="classssuds_1_1_array_list.html" title="A multipurpose container class that dynamically calculates the necessary size in memory for the objec...">ArrayList</a> class.  <a href="classssuds_1_1_array_list_1_1_array_list_iterator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a17073605b1b8e31ca126e61db633c57d" id="r_a17073605b1b8e31ca126e61db633c57d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17073605b1b8e31ca126e61db633c57d">ArrayList</a> ()</td></tr>
@@ -124,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b254608d7f7936f52c9e5430d7cc20f" id="r_a4b254608d7f7936f52c9e5430d7cc20f"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b254608d7f7936f52c9e5430d7cc20f">remove</a> (int index)</td></tr>
 <tr class="memdesc:a4b254608d7f7936f52c9e5430d7cc20f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes an item at a given index and shrinks the list accordingly.  <br /></td></tr>
 <tr class="separator:a4b254608d7f7936f52c9e5430d7cc20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa532bab4b720e80da558784ac072f069" id="r_aa532bab4b720e80da558784ac072f069"><td class="memItemLeft" align="right" valign="top"><a id="aa532bab4b720e80da558784ac072f069" name="aa532bab4b720e80da558784ac072f069"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (T value)</td></tr>
+<tr class="separator:aa532bab4b720e80da558784ac072f069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60136fbe1c474e432e337299bfe68c3f" id="r_a60136fbe1c474e432e337299bfe68c3f"><td class="memItemLeft" align="right" valign="top"><a id="a60136fbe1c474e432e337299bfe68c3f" name="a60136fbe1c474e432e337299bfe68c3f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>remove_all</b> (const T &amp;removed_item)</td></tr>
 <tr class="separator:a60136fbe1c474e432e337299bfe68c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,9 +158,35 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>get_size</b> () const<
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_capacity</b> () const</td></tr>
 <tr class="memdesc:af4357111f24573c2ea12aa5a7810c820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter Method for current max number of items in array. <br /></td></tr>
 <tr class="separator:af4357111f24573c2ea12aa5a7810c820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f53517577deb15d1e92b2f9c51e895" id="r_ac0f53517577deb15d1e92b2f9c51e895"><td class="memItemLeft" align="right" valign="top"><a id="ac0f53517577deb15d1e92b2f9c51e895" name="ac0f53517577deb15d1e92b2f9c51e895"></a>
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const int index)</td></tr>
+<tr class="separator:ac0f53517577deb15d1e92b2f9c51e895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d9d150c1752fefad5b4e46f6a2a8ee" id="r_aa2d9d150c1752fefad5b4e46f6a2a8ee"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2d9d150c1752fefad5b4e46f6a2a8ee">output</a> ()</td></tr>
 <tr class="memdesc:aa2d9d150c1752fefad5b4e46f6a2a8ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns array as string.  <br /></td></tr>
 <tr class="separator:aa2d9d150c1752fefad5b4e46f6a2a8ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1333b74865d8748444698c2c9948b74e" id="r_a1333b74865d8748444698c2c9948b74e"><td class="memItemLeft" align="right" valign="top"><a id="a1333b74865d8748444698c2c9948b74e" name="a1333b74865d8748444698c2c9948b74e"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;os)</td></tr>
+<tr class="separator:a1333b74865d8748444698c2c9948b74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d38b6e2574880f07422497f468ddd8" id="r_a29d38b6e2574880f07422497f468ddd8"><td class="memItemLeft" align="right" valign="top"><a id="a29d38b6e2574880f07422497f468ddd8" name="a29d38b6e2574880f07422497f468ddd8"></a>
+<a class="el" href="classssuds_1_1_array_list_1_1_array_list_iterator.html">ArrayListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memdesc:a29d38b6e2574880f07422497f468ddd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns reference to first in array. <br /></td></tr>
+<tr class="separator:a29d38b6e2574880f07422497f468ddd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807800c2ae6c98f36604c1e5a03ea8ca" id="r_a807800c2ae6c98f36604c1e5a03ea8ca"><td class="memItemLeft" align="right" valign="top"><a id="a807800c2ae6c98f36604c1e5a03ea8ca" name="a807800c2ae6c98f36604c1e5a03ea8ca"></a>
+<a class="el" href="classssuds_1_1_array_list_1_1_array_list_iterator.html">ArrayListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="memdesc:a807800c2ae6c98f36604c1e5a03ea8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns reference to last in array. <br /></td></tr>
+<tr class="separator:a807800c2ae6c98f36604c1e5a03ea8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab47d9ae06d64045fd398ed249c7a4e" id="r_a0ab47d9ae06d64045fd398ed249c7a4e"><td class="memItemLeft" align="right" valign="top"><a id="a0ab47d9ae06d64045fd398ed249c7a4e" name="a0ab47d9ae06d64045fd398ed249c7a4e"></a>
+<a class="el" href="classssuds_1_1_array_list_1_1_array_list_iterator.html">ArrayListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rbegin</b> ()</td></tr>
+<tr class="memdesc:a0ab47d9ae06d64045fd398ed249c7a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns reference to first in array, iterates backwards. <br /></td></tr>
+<tr class="separator:a0ab47d9ae06d64045fd398ed249c7a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922b31f659180cc9410c421276ac554a" id="r_a922b31f659180cc9410c421276ac554a"><td class="memItemLeft" align="right" valign="top"><a id="a922b31f659180cc9410c421276ac554a" name="a922b31f659180cc9410c421276ac554a"></a>
+<a class="el" href="classssuds_1_1_array_list_1_1_array_list_iterator.html">ArrayListIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
+<tr class="memdesc:a922b31f659180cc9410c421276ac554a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns reference to last in array, iterates backwards. <br /></td></tr>
+<tr class="separator:a922b31f659180cc9410c421276ac554a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8d2bb9b4a6c6af278e909279077c1f" id="r_a9f8d2bb9b4a6c6af278e909279077c1f"><td class="memItemLeft" align="right" valign="top"><a id="a9f8d2bb9b4a6c6af278e909279077c1f" name="a9f8d2bb9b4a6c6af278e909279077c1f"></a>
+<a class="el" href="classssuds_1_1_array_list.html">ArrayList</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classssuds_1_1_array_list.html">ArrayList</a> other)</td></tr>
+<tr class="memdesc:a9f8d2bb9b4a6c6af278e909279077c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates deep copy of other <a class="el" href="classssuds_1_1_array_list.html" title="A multipurpose container class that dynamically calculates the necessary size in memory for the objec...">ArrayList</a> object. <br /></td></tr>
+<tr class="separator:a9f8d2bb9b4a6c6af278e909279077c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />

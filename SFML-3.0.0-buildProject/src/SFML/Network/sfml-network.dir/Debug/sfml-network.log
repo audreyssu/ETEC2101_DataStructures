@@ -1,0 +1,14 @@
+﻿  Building Custom Rule C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-sources/SFML-3.0.0/src/SFML/Network/CMakeLists.txt
+  Ftp.cpp
+  Http.cpp
+  IpAddress.cpp
+  Packet.cpp
+  Socket.cpp
+  SocketSelector.cpp
+  TcpListener.cpp
+  TcpSocket.cpp
+  UdpSocket.cpp
+  SocketImpl.cpp
+  Generating Code...
+     Creating library C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/Debug/sfml-network-d.lib and object C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/lib/Debug/sfml-network-d.exp
+  sfml-network.vcxproj -> C:\Users\Deberry\Desktop\School Projects\ETEC2101_DataStructures\SFML-3.0.0-buildProject\bin\Debug\sfml-network-d-3.dll
