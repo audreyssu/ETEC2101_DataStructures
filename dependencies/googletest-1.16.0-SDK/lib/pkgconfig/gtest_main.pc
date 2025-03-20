@@ -1,0 +1,10 @@
+libdir=C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/googletest-1.16.0-SDK/lib
+includedir=C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/googletest-1.16.0-SDK/include
+
+Name: gtest_main
+Description: GoogleTest (with main() function)
+Version: 1.16.0
+URL: https://github.com/google/googletest
+Requires: gtest = 1.16.0
+Libs: -L${libdir} -lgtest_main 
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=0

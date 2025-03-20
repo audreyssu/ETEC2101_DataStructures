@@ -1,3 +1,0 @@
-C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/ogg-subbuild/CMakeFiles/ogg-populate.dir
-C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/ogg-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/Users/Deberry/Desktop/School Projects/ETEC2101_DataStructures/SFML-3.0.0-buildProject/_deps/ogg-subbuild/CMakeFiles/ZERO_CHECK.dir
