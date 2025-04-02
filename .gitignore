@@ -2,3 +2,7 @@ temp/*
 .vs
 *.exe
 *.pdb
+*.user
+*.filters
+*.filters
+*.filters
