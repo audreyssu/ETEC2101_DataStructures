@@ -11,7 +11,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\ssuds\aarray_list_utility_tests.cpp" />
     <ClCompile Include="..\..\src\ssuds\array_list_tests.cpp" />
     <ClCompile Include="..\..\src\ssuds\ssuds_unit_tests_main.cpp" />
   </ItemGroup>

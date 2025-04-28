@@ -214,7 +214,6 @@ namespace ssuds
 			friend class ArrayList;
 		};
 
-
 	// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 	// @ ATTRIBUTES                              @
 	// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -259,10 +258,6 @@ namespace ssuds
 		T& operator[](int index) const
 		{
 			return mData[index];
-		}
-
-		int getSize() const {
-			return mSize;
 		}
 
 
